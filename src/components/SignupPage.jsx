@@ -19,7 +19,7 @@ const SignupPage = () => {
       alert('Passwords do not match');
       return;
     }
-    // Add signup logic here
+
   };
 
   return (

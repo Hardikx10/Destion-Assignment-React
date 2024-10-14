@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Overlay */}
+  
       {sidebarOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden"
@@ -16,7 +16,7 @@ const Dashboard = () => {
         ></div>
       )}
       
-      {/* Sidebar */}
+
       <div
         className={`fixed inset-y-0 left-0 w-64 bg-indigo-700 text-white transform transition-transform duration-300 ease-in-out z-30 lg:relative lg:translate-x-0 ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
@@ -42,7 +42,7 @@ const Dashboard = () => {
             Settings
           </a>
         </nav>
-        {/* New Login and Signup buttons */}
+      
         <div className="mt-auto p-4">
           <button
             onClick={() => navigate('/login')}
@@ -61,7 +61,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Main content */}
+    
       <div className="flex-1 flex flex-col overflow-hidden">
         <header className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
@@ -100,8 +100,8 @@ const Dashboard = () => {
         </header>
         <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            {/* Dashboard content */}
-            <div className="px-4 py-6 sm:px-0">
+            
+        <div className="px-4 py-6 sm:px-0">
               <div className="border-4 border-dashed border-gray-200 rounded-lg h-96 flex items-center justify-center">
                 <p className="text-gray-500 text-xl">Dashboard content goes here</p>
               </div>
